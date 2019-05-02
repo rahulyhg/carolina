@@ -1,0 +1,45 @@
+
+extends /carolina/base/bootstrap_base
+
+include /carolina/http/mixins
+include /carolina/session/mixins
+
+block body
+  
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    div.container
+      
+      a.navbar-brand(href="/")= locals.config.app.name
+      
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link(href="login") Login
+        li.nav-item
+          a.nav-link(href="register") Register
+  
+  br
+  br 
+  
+  .container
+    .row
+      .col-md-8.mx-auto
+        .card
+          .card-header
+            h4 Forgot Password
+          .card-body
+            form(method="POST")
+              
+              +csrfToken(locals.request)
+              +flashMessages(locals.request)
+            
+              .row
+                .col-md-3.text-right
+                  label E-Mail Address
+                .col-md-8.ml-auto
+                  input.form-control(type="email" name="email")
+              
+              br
+              
+              .row
+                .col-md-8.ml-auto
+                  button.btn.btn-primary(type="submit") Send Reset Link

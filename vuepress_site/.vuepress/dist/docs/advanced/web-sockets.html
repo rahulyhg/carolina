@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Web Sockets | Carolina Documentation</title>
+    <meta name="description" content="Documentation for the Carolina web framework.">
+    
+    
+    <link rel="preload" href="/assets/css/styles.1d2d3735.css" as="style"><link rel="preload" href="/assets/js/app.1d2d3735.js" as="script"><link rel="preload" href="/assets/js/11.3d8fb5fe.js" as="script"><link rel="prefetch" href="/assets/js/1.f05c9cba.js"><link rel="prefetch" href="/assets/js/10.bac22d9b.js"><link rel="prefetch" href="/assets/js/12.15d64a99.js"><link rel="prefetch" href="/assets/js/13.025e71f2.js"><link rel="prefetch" href="/assets/js/14.fd7a08c1.js"><link rel="prefetch" href="/assets/js/15.e1bc1756.js"><link rel="prefetch" href="/assets/js/16.5770cf46.js"><link rel="prefetch" href="/assets/js/17.853ce496.js"><link rel="prefetch" href="/assets/js/18.971e2150.js"><link rel="prefetch" href="/assets/js/19.c761800c.js"><link rel="prefetch" href="/assets/js/2.988f372d.js"><link rel="prefetch" href="/assets/js/20.4e4bef1c.js"><link rel="prefetch" href="/assets/js/21.b3aaaedf.js"><link rel="prefetch" href="/assets/js/22.1bb76f3c.js"><link rel="prefetch" href="/assets/js/23.3d27ba26.js"><link rel="prefetch" href="/assets/js/24.0bac6e09.js"><link rel="prefetch" href="/assets/js/25.c2b28b9a.js"><link rel="prefetch" href="/assets/js/26.0d288857.js"><link rel="prefetch" href="/assets/js/27.98f9eff3.js"><link rel="prefetch" href="/assets/js/28.26974ced.js"><link rel="prefetch" href="/assets/js/29.6b34c182.js"><link rel="prefetch" href="/assets/js/3.8f49772c.js"><link rel="prefetch" href="/assets/js/30.3e9f8855.js"><link rel="prefetch" href="/assets/js/31.f88a0e4e.js"><link rel="prefetch" href="/assets/js/32.cd87dfeb.js"><link rel="prefetch" href="/assets/js/33.b61fa559.js"><link rel="prefetch" href="/assets/js/34.c116294f.js"><link rel="prefetch" href="/assets/js/35.2f210b65.js"><link rel="prefetch" href="/assets/js/36.cb8e5677.js"><link rel="prefetch" href="/assets/js/37.0de8ac6f.js"><link rel="prefetch" href="/assets/js/38.cb46e1ce.js"><link rel="prefetch" href="/assets/js/39.b4986129.js"><link rel="prefetch" href="/assets/js/4.6855463a.js"><link rel="prefetch" href="/assets/js/40.a060c3fb.js"><link rel="prefetch" href="/assets/js/41.e48da89d.js"><link rel="prefetch" href="/assets/js/42.3cf3cf2d.js"><link rel="prefetch" href="/assets/js/43.74393af5.js"><link rel="prefetch" href="/assets/js/44.9d05ba51.js"><link rel="prefetch" href="/assets/js/5.00dd7cd0.js"><link rel="prefetch" href="/assets/js/6.9ca81a96.js"><link rel="prefetch" href="/assets/js/7.24dcfe4e.js"><link rel="prefetch" href="/assets/js/8.f67b2fab.js"><link rel="prefetch" href="/assets/js/9.85b5be06.js">
+    <link rel="stylesheet" href="/assets/css/styles.1d2d3735.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      Carolina Documentation
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Documentation</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Documentation</a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>Getting Started</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Framework Overview</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Basics</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Authentication</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Advanced</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/docs/advanced/cli.html" class="sidebar-link">CLI</a></li><li><a href="/docs/advanced/events.html" class="sidebar-link">Events</a></li><li><a href="/docs/advanced/web-sockets.html" class="active sidebar-link">Web Sockets</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/advanced/web-sockets.html#configuration" class="sidebar-link">Configuration</a></li><li class="sidebar-sub-header"><a href="/docs/advanced/web-sockets.html#frontend-subscription" class="sidebar-link">Frontend Subscription</a></li><li class="sidebar-sub-header"><a href="/docs/advanced/web-sockets.html#overview" class="sidebar-link">Overview</a></li><li class="sidebar-sub-header"><a href="/docs/advanced/web-sockets.html#custom-channel-classes" class="sidebar-link">Custom Channel Classes</a></li><li class="sidebar-sub-header"><a href="/docs/advanced/web-sockets.html#frontend" class="sidebar-link">Frontend</a></li></ul></li><li><a href="/docs/advanced/files.html" class="sidebar-link">Working with Files</a></li><li><a href="/docs/advanced/email.html" class="sidebar-link">Email</a></li><li><a href="/docs/advanced/plugins.html" class="sidebar-link">Plugins</a></li><li><a href="/docs/advanced/jobs.html" class="sidebar-link">Jobs</a></li><li><a href="/docs/advanced/testing.html" class="sidebar-link">Testing</a></li><li><a href="/docs/advanced/requests.html" class="sidebar-link">The Requests Service</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Databases</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Included Plugins</span><span class="arrow right"></span></p><!----></div></li></ul></div><div class="page"><div class="content"><h1 id="web-sockets"><a href="#web-sockets" aria-hidden="true" class="header-anchor">#</a> Web Sockets</h1><p>The WebSockets Service uses the
+<a href="https://www.npmjs.com/package/socket.io" target="_blank" rel="noopener noreferrer">socket.io<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> module to allow the
+application to send messages from the server to clients on various channels.
+Doing this requires you to write frontend code that cooperates with this
+effort, and some helper files are provided with the framework.</p><div class="tip custom-block"><p class="custom-block-title">TIP</p><p>Sockets are disabled by default and your application may not need to
+enable them.</p></div><p></p><div class="table-of-contents"><ul><li><a href="#configuration">Configuration</a><ul><li><a href="#turning-web-sockets-on">Turning Web Sockets On</a></li></ul></li><li><a href="#frontend-subscription">Frontend Subscription</a></li><li><a href="#overview">Overview</a><ul><li><a href="#sending-events">Sending Events</a></li></ul></li><li><a href="#custom-channel-classes">Custom Channel Classes</a></li><li><a href="#frontend">Frontend</a></li></ul></div><p></p><h2 id="configuration"><a href="#configuration" aria-hidden="true" class="header-anchor">#</a> Configuration</h2><p>Configuration for the WebSockets Service is done in the file
+<code>config/web_sockets.js</code>.</p><p>The main purpose of this is to set up Channel drivers, described in more
+detail below. In the configuration file, Channels are mapped Channel classes
+and correspond to Socket IO namespaces. The keys for Channels should therefore
+look like paths (even though they are not related to the actual paths in your
+application). Example:</p><div class="language-javascript extra-class"><pre class="language-javascript"><code>exports <span class="token operator">=</span> module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  channels<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'/'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> driver<span class="token punctuation">:</span> <span class="token string">'MainChannel'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'/other'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> driver<span class="token punctuation">:</span> <span class="token string">'MyCustomChannel'</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>The driver attribute references a Channel class. You would create custom
+Channel classes to configure the Socket IO namespace.</p><h3 id="turning-web-sockets-on"><a href="#turning-web-sockets-on" aria-hidden="true" class="header-anchor">#</a> Turning Web Sockets On</h3><p>The <code>useSockets</code> property is a Boolean value. The Socket IO system will only
+be made if <code>useSockets</code> is set to true.</p><h2 id="frontend-subscription"><a href="#frontend-subscription" aria-hidden="true" class="header-anchor">#</a> Frontend Subscription</h2><p>You can use the <em>frontend</em> WebSocketsSvc to connect to channels and configure
+them. The frontend WebSockets Service is a singleton exported
+in the starter project in
+<code>src/carolina/web-sockets/web-sockets-svc.js</code>.</p><p>You could use it in a webpack application like this
+(assume this is an entry file located directly in <code>src/</code>):</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> WebSocketsSvc <span class="token keyword">from</span> <span class="token string">'./carolina/web-sockets/web-sockets-svc'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// configure socket connection to default channel</span>
+WebSocketsSvc<span class="token punctuation">.</span><span class="token function">configureChannel</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">socket</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  socket<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'connect'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Connection made...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// get access to socket connection anywhere else</span>
+<span class="token comment">// connection already established, connect returns it</span>
+<span class="token keyword">let</span> socket <span class="token operator">=</span> WebSocketsSvc<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+socket<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>The <code>connect(channel='/')</code> method establishes the channel connection and
+returns the Socket object. If the channel has already been connected to,
+it still returns the same Socket object. This allows you to access the
+Socket from across the application.</p><h2 id="overview"><a href="#overview" aria-hidden="true" class="header-anchor">#</a> Overview</h2><p>The general purposes of the WebSockets Service is to enable the sending of
+information from the server to the client (and back if necessary).
+This is done over various channels, some of which are public and some of
+which are private. Private channels will have to validate whether or not
+a user can join. Within channels, connections can be placed in various
+rooms.</p><p>If you use the front end Session Service and the backend Channel properly
+calls the <code>_configure</code> method of <code>BaseChannel</code> (more below), incoming
+socket connections will automatically be added to a room called
+<code>session.{sessionId}</code>. If a user is logged in to that session, the socket
+will also be added to a room called <code>user.{user._id}</code>. This allows easy
+emitting of events from anywhere in the application so specific users
+and sessions.</p><h3 id="sending-events"><a href="#sending-events" aria-hidden="true" class="header-anchor">#</a> Sending Events</h3><h4 id="broadcast-event"><a href="#broadcast-event" aria-hidden="true" class="header-anchor">#</a> Broadcast Event</h4><p>Suppose something takes place and you want to notify
+the frontend Javascript of all connections on the
+main channel to its occurrence.</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> WebSocketsSvc <span class="token operator">=</span> Carolina<span class="token punctuation">.</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'WebSockets'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+WebSocketsSvc<span class="token punctuation">.</span>channels<span class="token punctuation">[</span><span class="token string">'/'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'some-event'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>To configure frontend applications to listen for this, use the same frontend
+WebSocketsSvc described above:</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> WebSocketsSvc <span class="token keyword">from</span> <span class="token string">'./carolina/web-sockets/web-sockets-svc'</span><span class="token punctuation">;</span>
+
+WebSocketsSvc<span class="token punctuation">.</span><span class="token function">configureChannel</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">socket</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  socket<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'connect'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Connection made...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  socket<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'some-event'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// data from the server</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="send-event-to-specific-user"><a href="#send-event-to-specific-user" aria-hidden="true" class="header-anchor">#</a> Send Event to Specific User</h4><p>Say a user filled out a form on single page application that required action
+from another user. Perhaps another user goes in and approves the form - you
+may want to notify the original user that the next action was taken if they
+are still online and connected by socket:</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> User <span class="token operator">=</span> Carolina<span class="token punctuation">.</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'DB'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">_modelClass</span><span class="token punctuation">(</span><span class="token string">'User'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> specificUser <span class="token operator">=</span> <span class="token keyword">await</span> User<span class="token punctuation">.</span>$<span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">{</span> username<span class="token punctuation">:</span> <span class="token string">'username'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> WebSocketsSvc <span class="token operator">=</span> Carolina<span class="token punctuation">.</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'WebSockets'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+WebSocketsSvc<span class="token punctuation">.</span>channels<span class="token punctuation">[</span><span class="token string">'/'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">emitToUser</span><span class="token punctuation">(</span>specificUser<span class="token punctuation">,</span> <span class="token string">'some-event'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>The above code will emit to the room <code>user.{specificUser._id}</code> only.</p><h2 id="custom-channel-classes"><a href="#custom-channel-classes" aria-hidden="true" class="header-anchor">#</a> Custom Channel Classes</h2><p>The <code>MainChannel</code> class is the default driver for the '/' channel.
+It doesn't add any functionality over the <code>BaseChannel</code> class, which
+adds socket connections to rooms for the session and user. If all you want to
+do is be able to send arbitrary messages to all connections or to specific
+users, you may not need any other channels or drivers.</p><p>However, if you need more specific room assignments and handling of client
+events, you will need to make a custom Channel.</p><p>You can generate a new Channel using the CLI:</p><div class="language- extra-class"><pre class="language-text"><code>node . generate channel MyCustomChannel
+</code></pre></div><p>This would generate the file
+<code>site/web-sockets/channels/my-custom-channel.js</code>.</p><p>The class might look like this:</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">MyCustomChannel</span> <span class="token keyword">extends</span> <span class="token class-name">BaseChannel</span> <span class="token punctuation">{</span>
+  
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">_configure</span><span class="token punctuation">(</span><span class="token parameter">io<span class="token punctuation">,</span> name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// third argument is an optional function used to configure the socket</span>
+    <span class="token comment">// after it first connects</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">_configure</span><span class="token punctuation">(</span>io<span class="token punctuation">,</span> name<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">socket</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      socket<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'checkin'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">// socket may have _userId if using front service</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>socket<span class="token punctuation">.</span>_userId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          socket<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'authenticated'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// do something with data</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+exports <span class="token operator">=</span> module<span class="token punctuation">.</span>exports <span class="token operator">=</span> MyCustomChannel<span class="token punctuation">;</span>
+</code></pre></div><p>The <code>_configure()</code> method of <code>BaseChannel</code> will log new connections at SILLY
+level and will react to <code>session_id</code> events (from the client-side service),
+by adding the socket to a room for its session id and, if authenticated, adding
+it to a room for the user id and setting <code>socket._userId</code>. You can then listen
+for any socket event that you expect to be thrown first, and use it to check
+for a user and assign the socket to special rooms as appropriate.</p><p>To ensure that the WebSockets Service knows of your Channel type, ensure that
+it is exported by <code>site/web-sockets/channels/index.js</code>:</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// custom channels</span>
+exports <span class="token operator">=</span> module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  MyCustomChannel<span class="token punctuation">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./my-custom-channel'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>To use it as a driver for a channel, do this in <code>config/web_sockets.js</code>:</p><div class="language-javascript extra-class"><pre class="language-javascript"><code>  channels<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// other channels</span>
+
+    <span class="token string">'/custom'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> driver<span class="token punctuation">:</span> <span class="token string">'MyCustomChannel'</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><h2 id="frontend"><a href="#frontend" aria-hidden="true" class="header-anchor">#</a> Frontend</h2><p>The frontend is more simple. Here is how you could interact with the above
+channel:</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> WebSocketsSvc <span class="token keyword">from</span> <span class="token string">'./carolina/web-sockets/web-sockets-svc'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// connect channel and configure socket connection</span>
+WebSocketsSvc<span class="token punctuation">.</span><span class="token function">configureChannel</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">socket</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  socket<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'connect'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Connection made...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  socket<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'some-event'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// data from the server</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// more events</span>
+
+  <span class="token comment">// send initial checkin</span>
+  socket<span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'checkin'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>The <code>configureChannel</code> method will create the initial connection and send a
+<code>session_id</code> event with the Session ID from the cookie.</p></div><div class="page-edit"><!----><!----></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/docs/advanced/events.html" class="prev">
+          Events
+        </a></span><span class="next"><a href="/docs/advanced/files.html">
+          Working with Files
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/app.1d2d3735.js" defer></script><script src="/assets/js/11.3d8fb5fe.js" defer></script>
+  </body>
+</html>

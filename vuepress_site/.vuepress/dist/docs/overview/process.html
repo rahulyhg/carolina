@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Basic Server Process | Carolina Documentation</title>
+    <meta name="description" content="Documentation for the Carolina web framework.">
+    
+    
+    <link rel="preload" href="/assets/css/styles.1d2d3735.css" as="style"><link rel="preload" href="/assets/js/app.1d2d3735.js" as="script"><link rel="preload" href="/assets/js/37.0de8ac6f.js" as="script"><link rel="prefetch" href="/assets/js/1.f05c9cba.js"><link rel="prefetch" href="/assets/js/10.bac22d9b.js"><link rel="prefetch" href="/assets/js/11.3d8fb5fe.js"><link rel="prefetch" href="/assets/js/12.15d64a99.js"><link rel="prefetch" href="/assets/js/13.025e71f2.js"><link rel="prefetch" href="/assets/js/14.fd7a08c1.js"><link rel="prefetch" href="/assets/js/15.e1bc1756.js"><link rel="prefetch" href="/assets/js/16.5770cf46.js"><link rel="prefetch" href="/assets/js/17.853ce496.js"><link rel="prefetch" href="/assets/js/18.971e2150.js"><link rel="prefetch" href="/assets/js/19.c761800c.js"><link rel="prefetch" href="/assets/js/2.988f372d.js"><link rel="prefetch" href="/assets/js/20.4e4bef1c.js"><link rel="prefetch" href="/assets/js/21.b3aaaedf.js"><link rel="prefetch" href="/assets/js/22.1bb76f3c.js"><link rel="prefetch" href="/assets/js/23.3d27ba26.js"><link rel="prefetch" href="/assets/js/24.0bac6e09.js"><link rel="prefetch" href="/assets/js/25.c2b28b9a.js"><link rel="prefetch" href="/assets/js/26.0d288857.js"><link rel="prefetch" href="/assets/js/27.98f9eff3.js"><link rel="prefetch" href="/assets/js/28.26974ced.js"><link rel="prefetch" href="/assets/js/29.6b34c182.js"><link rel="prefetch" href="/assets/js/3.8f49772c.js"><link rel="prefetch" href="/assets/js/30.3e9f8855.js"><link rel="prefetch" href="/assets/js/31.f88a0e4e.js"><link rel="prefetch" href="/assets/js/32.cd87dfeb.js"><link rel="prefetch" href="/assets/js/33.b61fa559.js"><link rel="prefetch" href="/assets/js/34.c116294f.js"><link rel="prefetch" href="/assets/js/35.2f210b65.js"><link rel="prefetch" href="/assets/js/36.cb8e5677.js"><link rel="prefetch" href="/assets/js/38.cb46e1ce.js"><link rel="prefetch" href="/assets/js/39.b4986129.js"><link rel="prefetch" href="/assets/js/4.6855463a.js"><link rel="prefetch" href="/assets/js/40.a060c3fb.js"><link rel="prefetch" href="/assets/js/41.e48da89d.js"><link rel="prefetch" href="/assets/js/42.3cf3cf2d.js"><link rel="prefetch" href="/assets/js/43.74393af5.js"><link rel="prefetch" href="/assets/js/44.9d05ba51.js"><link rel="prefetch" href="/assets/js/5.00dd7cd0.js"><link rel="prefetch" href="/assets/js/6.9ca81a96.js"><link rel="prefetch" href="/assets/js/7.24dcfe4e.js"><link rel="prefetch" href="/assets/js/8.f67b2fab.js"><link rel="prefetch" href="/assets/js/9.85b5be06.js">
+    <link rel="stylesheet" href="/assets/css/styles.1d2d3735.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      Carolina Documentation
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Documentation</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Documentation</a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>Getting Started</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Framework Overview</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/docs/overview/process.html" class="active sidebar-link">Basic Server Process</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/overview/process.html#server-setup" class="sidebar-link">Server Setup</a></li><li class="sidebar-sub-header"><a href="/docs/overview/process.html#request-cycle" class="sidebar-link">Request Cycle</a></li><li class="sidebar-sub-header"><a href="/docs/overview/process.html#tear-down" class="sidebar-link">Tear Down</a></li></ul></li><li><a href="/docs/overview/service-library.html" class="sidebar-link">The Carolina Global Object</a></li><li><a href="/docs/overview/custom-services.html" class="sidebar-link">Custom Services</a></li><li><a href="/docs/overview/services.html" class="sidebar-link">Framework Services &amp; Class Libraries</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Basics</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Authentication</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Advanced</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Databases</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Included Plugins</span><span class="arrow right"></span></p><!----></div></li></ul></div><div class="page"><div class="content"><h1 id="basic-server-process"><a href="#basic-server-process" aria-hidden="true" class="header-anchor">#</a> Basic Server Process</h1><p>This section covers the basic process of what happens when you run the server
+and the application receives an HTTP request.</p><h2 id="server-setup"><a href="#server-setup" aria-hidden="true" class="header-anchor">#</a> Server Setup</h2><p>The Carolina framework uses the
+<a href="https://www.npmjs.com/package/express" target="_blank" rel="noopener noreferrer">ExpressJs<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> NPM module as the underlying
+web server and router manager. You start the server by running the
+following command:</p><div class="language- extra-class"><pre class="language-text"><code>node . runserver
+</code></pre></div><p>When you run this (or any other) terminal command, the file
+<code>initialize/app.js</code> is called first. This file reads the contents of the
+<code>.env</code> file into the environment, and creates the global Carolina object.
+It registers the various Services (which are the main part of the framework)
+as well as the configuration to the global Carolina object.</p><p>The Carolina object manages a library of Services, many of which come with the
+framework, but user-defined and plugin-defined Services may be registered as
+well. One included Service is the Http Service, which manages an ExpressJs
+web server. Services are
+lazy-loaded in the sense that they are singletons which are lazy-loaded the
+first time they are needed.</p><p>The Terminal Service, which handles CLI commands, is initialized, and if the
+command is <code>runserver</code>, the Http Service is initialized and set to listen for
+incoming requests.</p><h2 id="request-cycle"><a href="#request-cycle" aria-hidden="true" class="header-anchor">#</a> Request Cycle</h2><p>When an HTTP requests is received, it is handled by the HTTP service which
+casts it into an HTTP Request object. The request is mapped to the appropriate
+route and walked through the <code>before</code> methods of various Middleware singletons
+(based on the route group, specific route, or Controller handling the request).
+The request is then given to the Controller which returns a response.
+The response is then walked through the <code>after</code> methods of the same Middleware
+list but in reverse order. Once that is done, the response is sent to the
+client.</p><p>During the above cycle, many other Services may be called and used.
+For example, the Controller may throw an Event using the Events Service,
+insantiate, modify, and save a Model using the DB Service, or send an e-mail
+using the Email Service. This library of Services is the main aspect of the
+framework.</p><h2 id="tear-down"><a href="#tear-down" aria-hidden="true" class="header-anchor">#</a> Tear Down</h2><p>Whenever the server is stopped, or when any CLI command is complete,
+every registered Service has its <code>onShutdown</code> method called and &quot;awaited&quot;
+before the process exits. Once you get to writing your own Services,
+you can define this method to do any shut down work it needs to do.</p></div><div class="page-edit"><!----><!----></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/docs/getting-started/structure.html" class="prev">
+          Application Structure
+        </a></span><span class="next"><a href="/docs/overview/service-library.html">
+          The Carolina Global Object
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/app.1d2d3735.js" defer></script><script src="/assets/js/37.0de8ac6f.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+
+groups:
+  pony_users:
+  
+    - model: User
+      ref: applejack
+      fields:
+        username: applejack
+        emailAddress: applejack@mailinator.com
+      methods:
+        - method: setPassword
+          args:
+            - orange123
+            
+    - model: User
+      ref: fluttershy
+      fields:
+        username: fluttershy
+        emailAddress: fluttershy@mailinator.com
+      methods:
+        - method: setPassword
+          args:
+            - yellow123
+            
+    - model: User
+      ref: pinkiePie
+      fields:
+        username: pinkiePie
+        emailAddress: pinkiepie@mailinator.com
+      methods:
+        - method: setPassword
+          args:
+            - pink123
+            
+    - model: User
+      ref: rainbowDash
+      fields:
+        username: rainbowDash
+        emailAddress: rainbowdash@mailinator.com
+      methods:
+        - method: setPassword
+          args:
+            - blue123
+            
+    - model: User
+      ref: rarity
+      fields:
+        username: rarity
+        emailAddress: rarity@mailinator.com
+      methods:
+        - method: setPassword
+          args:
+            - white123
+            
+    - model: User
+      ref: twilightSparkle
+      fields:
+        username: twilightSparkle
+        emailAddress: twilightsparkle@mailinator.com
+      methods:
+        - method: setPassword
+          args:
+            - purple123
+
+exec:
+  - pony_users

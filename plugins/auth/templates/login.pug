@@ -1,0 +1,60 @@
+
+extends /carolina/base/bootstrap_base
+
+include /carolina/http/mixins
+include /carolina/session/mixins
+
+block body
+  
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    div.container
+      
+      a.navbar-brand(href="/")= locals.config.app.name
+      
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link(href="login") Login
+        li.nav-item
+          a.nav-link(href="register") Register
+  
+  br
+  br 
+  
+  .container
+    .row
+      .col-md-8.mx-auto
+        .card
+          .card-header
+            h4 Login
+          .card-body
+            form(method="POST")
+              
+              +csrfToken(locals.request)
+              +flashMessages(locals.request)
+            
+              .row
+                .col-md-3.text-right
+                  label E-Mail Address or Username
+                .col-md-8.ml-auto
+                  input.form-control(type="text" name="username")
+              
+              br
+              
+              .row
+                .col-md-3.text-right
+                  label Password
+                .col-md-8.ml-auto
+                  input.form-control(type="password" name="password")
+              
+              br
+              
+              .row
+                .col-md-8.ml-auto
+                  button.btn.btn-primary(type="submit") Login
+              
+              br
+
+              .row
+                .col-md-8.ml-auto
+                  p
+                    a(href='forgot') Forgot username or password?

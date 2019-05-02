@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Controller Classes | Carolina Documentation</title>
+    <meta name="description" content="Documentation for the Carolina web framework.">
+    
+    
+    <link rel="preload" href="/assets/css/styles.1d2d3735.css" as="style"><link rel="preload" href="/assets/js/app.1d2d3735.js" as="script"><link rel="preload" href="/assets/js/14.fd7a08c1.js" as="script"><link rel="prefetch" href="/assets/js/1.f05c9cba.js"><link rel="prefetch" href="/assets/js/10.bac22d9b.js"><link rel="prefetch" href="/assets/js/11.3d8fb5fe.js"><link rel="prefetch" href="/assets/js/12.15d64a99.js"><link rel="prefetch" href="/assets/js/13.025e71f2.js"><link rel="prefetch" href="/assets/js/15.e1bc1756.js"><link rel="prefetch" href="/assets/js/16.5770cf46.js"><link rel="prefetch" href="/assets/js/17.853ce496.js"><link rel="prefetch" href="/assets/js/18.971e2150.js"><link rel="prefetch" href="/assets/js/19.c761800c.js"><link rel="prefetch" href="/assets/js/2.988f372d.js"><link rel="prefetch" href="/assets/js/20.4e4bef1c.js"><link rel="prefetch" href="/assets/js/21.b3aaaedf.js"><link rel="prefetch" href="/assets/js/22.1bb76f3c.js"><link rel="prefetch" href="/assets/js/23.3d27ba26.js"><link rel="prefetch" href="/assets/js/24.0bac6e09.js"><link rel="prefetch" href="/assets/js/25.c2b28b9a.js"><link rel="prefetch" href="/assets/js/26.0d288857.js"><link rel="prefetch" href="/assets/js/27.98f9eff3.js"><link rel="prefetch" href="/assets/js/28.26974ced.js"><link rel="prefetch" href="/assets/js/29.6b34c182.js"><link rel="prefetch" href="/assets/js/3.8f49772c.js"><link rel="prefetch" href="/assets/js/30.3e9f8855.js"><link rel="prefetch" href="/assets/js/31.f88a0e4e.js"><link rel="prefetch" href="/assets/js/32.cd87dfeb.js"><link rel="prefetch" href="/assets/js/33.b61fa559.js"><link rel="prefetch" href="/assets/js/34.c116294f.js"><link rel="prefetch" href="/assets/js/35.2f210b65.js"><link rel="prefetch" href="/assets/js/36.cb8e5677.js"><link rel="prefetch" href="/assets/js/37.0de8ac6f.js"><link rel="prefetch" href="/assets/js/38.cb46e1ce.js"><link rel="prefetch" href="/assets/js/39.b4986129.js"><link rel="prefetch" href="/assets/js/4.6855463a.js"><link rel="prefetch" href="/assets/js/40.a060c3fb.js"><link rel="prefetch" href="/assets/js/41.e48da89d.js"><link rel="prefetch" href="/assets/js/42.3cf3cf2d.js"><link rel="prefetch" href="/assets/js/43.74393af5.js"><link rel="prefetch" href="/assets/js/44.9d05ba51.js"><link rel="prefetch" href="/assets/js/5.00dd7cd0.js"><link rel="prefetch" href="/assets/js/6.9ca81a96.js"><link rel="prefetch" href="/assets/js/7.24dcfe4e.js"><link rel="prefetch" href="/assets/js/8.f67b2fab.js"><link rel="prefetch" href="/assets/js/9.85b5be06.js">
+    <link rel="stylesheet" href="/assets/css/styles.1d2d3735.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      Carolina Documentation
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Documentation</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Documentation</a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>Getting Started</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Framework Overview</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Basics</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/docs/basics/routing.html" class="sidebar-link">Routing</a></li><li><a href="/docs/basics/middleware.html" class="sidebar-link">Middleware</a></li><li><a href="/docs/basics/csrf.html" class="sidebar-link">CSRF Tokens </a></li><li><a href="/docs/basics/controllers.html" class="active sidebar-link">Controller Classes</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/basics/controllers.html#basic-controllers" class="sidebar-link">Basic Controllers</a></li><li class="sidebar-sub-header"><a href="/docs/basics/controllers.html#carolina-controllers-and-package-controllers" class="sidebar-link">Carolina Controllers and Package Controllers</a></li><li class="sidebar-sub-header"><a href="/docs/basics/controllers.html#controller-middleware" class="sidebar-link">Controller Middleware</a></li></ul></li><li><a href="/docs/basics/requests.html" class="sidebar-link">HTTP Request Objects</a></li><li><a href="/docs/basics/responses.html" class="sidebar-link">HTTP Response Objects</a></li><li><a href="/docs/basics/template-views.html" class="sidebar-link">Template Views</a></li><li><a href="/docs/basics/session.html" class="sidebar-link">Session</a></li><li><a href="/docs/basics/validation.html" class="sidebar-link">Validation</a></li><li><a href="/docs/basics/errors.html" class="sidebar-link">Exceptions</a></li><li><a href="/docs/basics/logging.html" class="sidebar-link">Logging</a></li><li><a href="/docs/basics/pug.html" class="sidebar-link">Pug Templates</a></li><li><a href="/docs/basics/crypto.html" class="sidebar-link">The Crypto Service</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Authentication</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Advanced</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Databases</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Included Plugins</span><span class="arrow right"></span></p><!----></div></li></ul></div><div class="page"><div class="content"><h1 id="controller-classes"><a href="#controller-classes" aria-hidden="true" class="header-anchor">#</a> Controller Classes</h1><p>While you can write the route handling logic for an entire app using the
+<code>func</code> property of all your route specifications (see <a href="/basics/routes">Routing</a>),
+it is generally better to group your handling logic in controller classes.</p><p>Those classes are stored in the <code>site/http/controllers</code> directory and must
+be exposed by name in <code>site/http/controllers/index.js</code>.</p><h2 id="basic-controllers"><a href="#basic-controllers" aria-hidden="true" class="header-anchor">#</a> Basic Controllers</h2><h3 id="writing-controllers"><a href="#writing-controllers" aria-hidden="true" class="header-anchor">#</a> Writing Controllers</h3><p>You can generate a new controller using the generator command:</p><div class="language- extra-class"><pre class="language-text"><code>node . generate controller ExampleController
+</code></pre></div><p>Running the above command would generate the file
+<code>site/http/controllers/example-controller.js</code>.
+It would look something like this:</p><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> BaseController <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'carolina/main/http/controllers/base-controller'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ExampleController</span> <span class="token keyword">extends</span> <span class="token class-name">BaseController</span> <span class="token punctuation">{</span>
+  
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  
+  <span class="token keyword">async</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token parameter">request<span class="token punctuation">,</span> data<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">sendText</span><span class="token punctuation">(</span><span class="token string">&quot;Hello, world!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+exports <span class="token operator">=</span> module<span class="token punctuation">.</span>exports <span class="token operator">=</span> ExampleController<span class="token punctuation">;</span>
+</code></pre></div><p>You would need to export this class in your <code>site/http/controllers/index.js</code>
+file like this:</p><div class="language-js extra-class"><pre class="language-js"><code>exports <span class="token operator">=</span> module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// other controllers</span>
+  <span class="token string">&quot;ExampleController&quot;</span><span class="token punctuation">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./example-controller'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>Note the default controller method &quot;handle&quot; is stubbed.</p><p>This controller could be referenced in your routes like this:</p><div class="language-js extra-class"><pre class="language-js"><code>exports <span class="token operator">=</span> module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    route<span class="token punctuation">:</span> <span class="token string">&quot;/some/route&quot;</span><span class="token punctuation">,</span>
+    controller<span class="token punctuation">:</span> <span class="token string">&quot;ExampleController&quot;</span><span class="token punctuation">,</span>
+    method<span class="token punctuation">:</span> <span class="token string">&quot;handle&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>The <code>method</code> property here is not needed, since <code>handle</code> is assumed as the
+default controller method when one is not provided.</p><p>The <code>method</code> property allows you to defined multiple alternative handler
+functions in the same controller and map specific routes to them.</p><p>For example, you could add a method with the same signature called
+<code>otherHandler</code>:</p><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">async</span> <span class="token function">otherHandler</span><span class="token punctuation">(</span><span class="token parameter">request<span class="token punctuation">,</span> data<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">sendText</span><span class="token punctuation">(</span><span class="token string">&quot;Other Handler Response.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>You would reference it like this in your routes:</p><div class="language-js extra-class"><pre class="language-js"><code>exports <span class="token operator">=</span> module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    route<span class="token punctuation">:</span> <span class="token string">&quot;/some/route&quot;</span><span class="token punctuation">,</span>
+    controller<span class="token punctuation">:</span> <span class="token string">&quot;ExampleController&quot;</span> 
+    <span class="token comment">// will use the handle method by default</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    route<span class="token punctuation">:</span> <span class="token string">&quot;/some/other/route&quot;</span><span class="token punctuation">,</span>
+    controller<span class="token punctuation">:</span> <span class="token string">&quot;ExampleController&quot;</span><span class="token punctuation">,</span>
+    method<span class="token punctuation">:</span> <span class="token string">&quot;otherHandler&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>Now, incoming requests to <code>/some/other/route</code> will be handled by the
+<code>otherHandler</code> method, returning the text &quot;Other Handler Response.&quot; to the
+browser.</p><p>::: info
+Note that your controller classes are not technically required to extend
+the carolina <code>BaseController</code> class, but <code>BaseController</code> provides
+several convenience methods such as <code>sendText()</code>.
+:::</p><p>When creating controller methods, avoid overriding the following methods:</p><ul><li><code>getMiddleware</code></li><li><code>pugTemplate</code></li><li><code>redirect</code></li><li><code>sendJSON</code></li><li><code>sendText</code></li></ul><h2 id="carolina-controllers-and-package-controllers"><a href="#carolina-controllers-and-package-controllers" aria-hidden="true" class="header-anchor">#</a> Carolina Controllers and Package Controllers</h2><h3 id="carolina-controllers"><a href="#carolina-controllers" aria-hidden="true" class="header-anchor">#</a> Carolina Controllers</h3><p>The Carolina Http service keeps a mapping of all controller names to controller
+classes. You should avoid overriding built-in Carolina controllers.
+The built-in controllers handle special route functions like processing
+route <code>func</code> properties, performing redirects, and rendering templates.</p><p>This is a list of built-in controllers:</p><table><thead><tr><th>Name</th><th>Purpose</th></tr></thead><tbody><tr><td><code>FunctionController</code></td><td>Automatically used to process routes that define a <code>func</code> property by wrapping the provided function.</td></tr><tr><td><code>RedirectController</code></td><td>Automatically used to process routes that define redirects.</td></tr><tr><td><code>TemplateController</code></td><td>Automatically used to process routes that specify templates.</td></tr></tbody></table><h3 id="package-controllers"><a href="#package-controllers" aria-hidden="true" class="header-anchor">#</a> Package Controllers</h3><p>Packages built for Carolina should export controllers by names like
+<code>&lt;package_name&gt;/&lt;controller_name&gt;</code>, for example <code>my-package/MyController</code>.</p><p>This convention is not enforced but is recommended to avoid possible name
+collisions.</p><p>As long as the package is installed in <code>node_modules</code> and listed as a
+package in your config (see <a href="/advanced/using-packages">Using Packages</a>),
+you can reference its controllers like this:</p><div class="language-javascript extra-class"><pre class="language-javascript"><code>exports <span class="token operator">=</span> module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    route<span class="token punctuation">:</span> <span class="token string">&quot;/some/route&quot;</span><span class="token punctuation">,</span>
+    controller<span class="token punctuation">:</span> <span class="token string">&quot;my-package/MyController&quot;</span>
+    <span class="token comment">// specify method if needed</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="controller-middleware"><a href="#controller-middleware" aria-hidden="true" class="header-anchor">#</a> Controller Middleware</h2><p>It is easy to specify middleware (in addition to sitewide middleware and
+route group middleware) in the route specification:</p><div class="language-javascript extra-class"><pre class="language-javascript"><code>exports <span class="token operator">=</span> module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    route<span class="token punctuation">:</span> <span class="token string">&quot;/some/route&quot;</span><span class="token punctuation">,</span>
+    controller<span class="token punctuation">:</span> <span class="token string">&quot;SomeController&quot;</span><span class="token punctuation">,</span>
+    middleware<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;SomeMiddleware&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;SomeOtherMiddleware&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>In cases where you are grouping related handlers into a single controller
+class, it might be helpful to specify middleware at the controller level.
+This is done by overriding the <code>getMiddleware</code> method of your controller
+class.</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">getMiddleware</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token string">&quot;SomeMiddleware&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>The middleware defined here will be executed last (after sitewide middleware,
+route group middleware, and route-specific middleware).</p></div><div class="page-edit"><!----><!----></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/docs/basics/csrf.html" class="prev">
+          CSRF Tokens 
+        </a></span><span class="next"><a href="/docs/basics/requests.html">
+          HTTP Request Objects
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/app.1d2d3735.js" defer></script><script src="/assets/js/14.fd7a08c1.js" defer></script>
+  </body>
+</html>

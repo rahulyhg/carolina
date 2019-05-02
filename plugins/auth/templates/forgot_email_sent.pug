@@ -1,0 +1,30 @@
+
+extends /carolina/base/bootstrap_base
+
+include /carolina/http/mixins
+include /carolina/session/mixins
+
+block body
+  
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    div.container
+      
+      a.navbar-brand(href="/")= locals.config.app.name
+      
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link(href="login") Login
+        li.nav-item
+          a.nav-link(href="register") Register
+  
+  br
+  br 
+  
+  .container
+    .row
+      .col-md-8.mx-auto
+        .card
+          .card-header
+            h4 Forgot Password
+          .card-body
+            p An e-mail was sent to #{emailAddress} if it belongs to an account.

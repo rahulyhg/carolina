@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Authentication Basics | Carolina Documentation</title>
+    <meta name="description" content="Documentation for the Carolina web framework.">
+    
+    
+    <link rel="preload" href="/assets/css/styles.1d2d3735.css" as="style"><link rel="preload" href="/assets/js/app.1d2d3735.js" as="script"><link rel="preload" href="/assets/js/12.15d64a99.js" as="script"><link rel="prefetch" href="/assets/js/1.f05c9cba.js"><link rel="prefetch" href="/assets/js/10.bac22d9b.js"><link rel="prefetch" href="/assets/js/11.3d8fb5fe.js"><link rel="prefetch" href="/assets/js/13.025e71f2.js"><link rel="prefetch" href="/assets/js/14.fd7a08c1.js"><link rel="prefetch" href="/assets/js/15.e1bc1756.js"><link rel="prefetch" href="/assets/js/16.5770cf46.js"><link rel="prefetch" href="/assets/js/17.853ce496.js"><link rel="prefetch" href="/assets/js/18.971e2150.js"><link rel="prefetch" href="/assets/js/19.c761800c.js"><link rel="prefetch" href="/assets/js/2.988f372d.js"><link rel="prefetch" href="/assets/js/20.4e4bef1c.js"><link rel="prefetch" href="/assets/js/21.b3aaaedf.js"><link rel="prefetch" href="/assets/js/22.1bb76f3c.js"><link rel="prefetch" href="/assets/js/23.3d27ba26.js"><link rel="prefetch" href="/assets/js/24.0bac6e09.js"><link rel="prefetch" href="/assets/js/25.c2b28b9a.js"><link rel="prefetch" href="/assets/js/26.0d288857.js"><link rel="prefetch" href="/assets/js/27.98f9eff3.js"><link rel="prefetch" href="/assets/js/28.26974ced.js"><link rel="prefetch" href="/assets/js/29.6b34c182.js"><link rel="prefetch" href="/assets/js/3.8f49772c.js"><link rel="prefetch" href="/assets/js/30.3e9f8855.js"><link rel="prefetch" href="/assets/js/31.f88a0e4e.js"><link rel="prefetch" href="/assets/js/32.cd87dfeb.js"><link rel="prefetch" href="/assets/js/33.b61fa559.js"><link rel="prefetch" href="/assets/js/34.c116294f.js"><link rel="prefetch" href="/assets/js/35.2f210b65.js"><link rel="prefetch" href="/assets/js/36.cb8e5677.js"><link rel="prefetch" href="/assets/js/37.0de8ac6f.js"><link rel="prefetch" href="/assets/js/38.cb46e1ce.js"><link rel="prefetch" href="/assets/js/39.b4986129.js"><link rel="prefetch" href="/assets/js/4.6855463a.js"><link rel="prefetch" href="/assets/js/40.a060c3fb.js"><link rel="prefetch" href="/assets/js/41.e48da89d.js"><link rel="prefetch" href="/assets/js/42.3cf3cf2d.js"><link rel="prefetch" href="/assets/js/43.74393af5.js"><link rel="prefetch" href="/assets/js/44.9d05ba51.js"><link rel="prefetch" href="/assets/js/5.00dd7cd0.js"><link rel="prefetch" href="/assets/js/6.9ca81a96.js"><link rel="prefetch" href="/assets/js/7.24dcfe4e.js"><link rel="prefetch" href="/assets/js/8.f67b2fab.js"><link rel="prefetch" href="/assets/js/9.85b5be06.js">
+    <link rel="stylesheet" href="/assets/css/styles.1d2d3735.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      Carolina Documentation
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Documentation</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Documentation</a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>Getting Started</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Framework Overview</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Basics</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Authentication</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/docs/auth/auth.html" class="active sidebar-link">Authentication Basics</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/auth/auth.html#the-carolina-auth-plugin" class="sidebar-link">The Carolina/Auth Plugin</a></li><li class="sidebar-sub-header"><a href="/docs/auth/auth.html#manual-authentication" class="sidebar-link">Manual Authentication</a></li><li class="sidebar-sub-header"><a href="/docs/auth/auth.html#custom-guard-middleware" class="sidebar-link">Custom Guard Middleware</a></li><li class="sidebar-sub-header"><a href="/docs/auth/auth.html#editing-the-user-model" class="sidebar-link">Editing the User Model</a></li><li class="sidebar-sub-header"><a href="/docs/auth/auth.html#relevant-events" class="sidebar-link">Relevant Events</a></li></ul></li><li><a href="/docs/auth/email-verification.html" class="sidebar-link">E-Mail Verification</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Advanced</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Databases</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Included Plugins</span><span class="arrow right"></span></p><!----></div></li></ul></div><div class="page"><div class="content"><h1 id="authentication-basics"><a href="#authentication-basics" aria-hidden="true" class="header-anchor">#</a> Authentication Basics</h1><p>The starter project comes with the official plugin
+'carolina/plugins/auth' (Carolina/Auth)
+already installed and configured.
+It provides some of the basics for providing authentication functionality to
+your application. It provides basics routes and templates
+for user login and registration as well as Middleware to allow you to
+guard routes for logged-in users only. For basic apps, you probably do not
+need to alter the default settings.</p><p>The starter project includes a basic User model, defined in
+<code>site/db/models/user.js</code>. You can add methods to it and fields to its schema,
+but you should leave the existing fields alone and not make any additional
+fields required to allow it to interact with
+the Carolina/Auth plugin.</p><p></p><div class="table-of-contents"><ul><li><a href="#the-carolina-auth-plugin">The Carolina/Auth Plugin</a><ul><li><a href="#routes">Routes</a></li><li><a href="#templates">Templates</a></li><li><a href="#authentication-process">Authentication Process</a></li><li><a href="#the-carolina-auth-extractusermiddleware-class">The Carolina/Auth/ExtractUserMiddleware Class</a></li><li><a href="#the-carolina-auth-authguardmiddleware-class">The Carolina/Auth/AuthGuardMiddleware Class</a></li></ul></li><li><a href="#manual-authentication">Manual Authentication</a></li><li><a href="#custom-guard-middleware">Custom Guard Middleware</a></li><li><a href="#editing-the-user-model">Editing the User Model</a></li><li><a href="#relevant-events">Relevant Events</a></li></ul></div><p></p><h2 id="the-carolina-auth-plugin"><a href="#the-carolina-auth-plugin" aria-hidden="true" class="header-anchor">#</a> The <code>Carolina/Auth</code> Plugin</h2><p>The <code>Carolina/Auth</code> plugin (which is installed as 'carolina/plugins/auth')
+comes with the starter project. It provides the Controller
+<code>Carolina/Auth/AuthController</code> for handling requests to the authentication
+routes and it uses the Service <code>Carolina/Auth</code> to do much of the work.
+The required Service is already configured in the <code>services</code> property of
+<code>config/app.js</code>.</p><p>If, for whatever reason, you do not have the plugin installed, here are the
+basic steps to take:</p><ul><li>Add 'carolina/plugins/auth' to the <code>plugins</code> property of <code>config/app.js</code>.</li><li>Add the key 'Carolina/Auth' to the <code>services</code> property of <code>config/app.js</code> with the value 'carolina/plugins/auth/plugin/service'.</li><li>Run the command CLI <code>node . import-plugin-resources -p carolina/plugins/auth -crt</code>. Note that this will <strong>overwrite</strong><code>config/carolina_auth.js</code> if it exists. If you already have the file and keep its contents, do <code>-rt</code> instead of <code>-crt</code>.</li><li>Export the config file in <code>config/index.js</code>, like this: <code>carolina_auth: require('/carolina_auth'),</code></li><li>Change any desired settings in <code>config/carolina_auth.js</code>.</li><li>Add <code>{ route: &quot;/auth&quot;, subs: require('carolina/plugins/auth/router') }</code> to <code>site/http/routes/browser.js</code> to mount the authentication routes.</li><li>Set the value of <code>mount</code> in <code>config/carolina_auth.js</code> to whatever the mount point is (if something other than &quot;/auth&quot;).</li></ul><h3 id="routes"><a href="#routes" aria-hidden="true" class="header-anchor">#</a> Routes</h3><p>Assuming you chose <code>/auth</code> as the mount point for the plugin router
+(which is the default configuration in the starter project), the login
+screen is available at <code>/auth/login</code> and the registration screen is available
+at <code>/auth/register</code>.</p><p>If a user makes too many failed login attempts with the same username and from
+the same IP address, that user will be throttled for a certain amount of time.
+The configuration for this throttling is in <code>config/carolina_auth.js</code>.</p><h3 id="templates"><a href="#templates" aria-hidden="true" class="header-anchor">#</a> Templates</h3><p>The templates used by the Carolina/Auth plugin are found in
+<code>templates/carolina/auth/</code>. You shouldn't alter them directly, but you
+can copy them to another part of your <code>templates/</code> directory and alter them.
+You can then tell the plugin (by editing <code>config/carolina_auth.js</code>) to use
+those other templates instead. If you do use other
+templates, you will need to ensure
+that the form data POSTed would still be the same.</p><h3 id="authentication-process"><a href="#authentication-process" aria-hidden="true" class="header-anchor">#</a> Authentication Process</h3><p>A user registers and logs in via the routes <code>/auth/register</code> and <code>/auth/login</code>.
+Once a user successfully logs in, they will be redirected to the value of
+the <code>loginRedirect</code> property of <code>config/carolina_auth.js</code> (which defaults to
+&quot;/home&quot;). Also, the <code>_id</code> of the User is added to the current session object.</p><h3 id="the-carolina-auth-extractusermiddleware-class"><a href="#the-carolina-auth-extractusermiddleware-class" aria-hidden="true" class="header-anchor">#</a> The <code>Carolina/Auth/ExtractUserMiddleware</code> Class</h3><p>The Middleware <code>Carolina/Auth/ExtractUserMiddleware</code> is applied in the
+starter project to all routes in the &quot;browser&quot; route group. It requires the
+<code>SessionMiddleware</code> to be before it in order to work properly. This Middleware
+will check the session of all incoming requests for a valid user id. If one
+is found, the <code>User</code> object corresponding to the logged-in user will be
+populated as <code>request.user</code> and therefore
+available to later Middleware and the
+Controller.</p><p>Example (in a Controller):</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">async</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token parameter">request<span class="token punctuation">,</span> data<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> user <span class="token operator">=</span> request<span class="token punctuation">.</span>user<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>user<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// user is logged in</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span>username<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// =&gt; &quot;user123&quot;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">// no user is logged in</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="the-carolina-auth-authguardmiddleware-class"><a href="#the-carolina-auth-authguardmiddleware-class" aria-hidden="true" class="header-anchor">#</a> The <code>Carolina/Auth/AuthGuardMiddleware</code> Class</h3><p>The Carolina/Auth plugin also provides the <code>Carolina/Auth/AuthGuardMiddleware</code>
+class to reserve some routes for logged-in users only. A good way to use it
+is to define a Controller with a group of related handler methods for routes
+that should only be accessed by authenticated users.</p><p>The Middleware will check to see if <code>request.user</code> is populated, only allowing
+requests to proceed if it is. Otherwise, the user is redirected to the value
+of the <code>unauthorizedRedirect</code> property in <code>config/carolina_auth.js</code> (which
+defaults to '/auth/login').</p><p>Example Controller:</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">MyCustomController</span> <span class="token keyword">extends</span> <span class="token class-name">BaseController</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+  <span class="token function">getMiddleware</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token string">'Carolina/Auth/AuthGuardMiddleware'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">async</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token parameter">requeset<span class="token punctuation">,</span> data<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// provide a response</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// more handler methods</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="manual-authentication"><a href="#manual-authentication" aria-hidden="true" class="header-anchor">#</a> Manual Authentication</h2><p>If you don't want to use the built-in routes or want to also authenticate
+users elsewhere in the application, you can use some methods associated of
+the Carolina/Auth Service.</p><p>You can get a reference to the Service from the Carolina global object.</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> AuthSvc <span class="token operator">=</span> Carolina<span class="token punctuation">.</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'Carolina/Auth'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>User Registration</strong></p><p>You can register a user (creating a new User object) using the <code>register</code>
+method.</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> registrationSuccess <span class="token operator">=</span> <span class="token keyword">await</span> AuthSvc<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span><span class="token string">'username'</span><span class="token punctuation">,</span> <span class="token string">'user@example.com'</span><span class="token punctuation">,</span>
+  <span class="token string">'password123'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>registrationSuccess<span class="token punctuation">.</span>success<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// user has already been created and saved</span>
+  <span class="token keyword">let</span> user <span class="token operator">=</span> registrationSuccess<span class="token punctuation">.</span>user<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">else</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>registrationSuccess<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// string explaining why registration failed</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>User Login</strong></p><p>You can attempt to login a user using the <code>login</code> method.</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// first argument can be either username or e-mail address</span>
+<span class="token comment">// treated as an e-mail address if &quot;@&quot; is present</span>
+<span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token keyword">await</span> AuthSvc<span class="token punctuation">.</span><span class="token function">login</span><span class="token punctuation">(</span><span class="token string">'username'</span><span class="token punctuation">,</span> <span class="token string">'password123'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>user<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// credentials matched</span>
+  <span class="token comment">// you must manually add user_id to the session to save the login</span>
+  response<span class="token punctuation">.</span><span class="token function">setSessionValue</span><span class="token punctuation">(</span><span class="token string">'user_id'</span><span class="token punctuation">,</span> user<span class="token punctuation">.</span>_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token comment">// authentication failed</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>User Logout</strong></p><p>To log a user out, simply nullify the <code>user_id</code> property of the current
+Session.</p><div class="language-javascript extra-class"><pre class="language-javascript"><code>response<span class="token punctuation">.</span><span class="token function">setSessionValue</span><span class="token punctuation">(</span><span class="token string">'user_id'</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>Password Reset</strong></p><p>To manually reset a user's password and have a Reset Password E-Mail sent to
+them, use the <code>forgotPasswordEmail</code> method and pass in the user's email
+address.</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">await</span> AuthSvc<span class="token punctuation">.</span><span class="token function">forgotPasswordEmail</span><span class="token punctuation">(</span><span class="token string">'username@example.com'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="custom-guard-middleware"><a href="#custom-guard-middleware" aria-hidden="true" class="header-anchor">#</a> Custom Guard Middleware</h2><p>You can write your own guard Middleware to do more precise protection of
+certain routes. Here is an example that limits access to user's with a username
+that begins with &quot;a&quot;.</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">LetterAGuardMiddleware</span> <span class="token keyword">extends</span> <span class="token class-name">BaseMiddleware</span> <span class="token punctuation">{</span>
+  <span class="token keyword">async</span> <span class="token function">before</span><span class="token punctuation">(</span><span class="token parameter">request<span class="token punctuation">,</span> data<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>request<span class="token punctuation">.</span>user<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> response <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HttpResponse</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      response<span class="token punctuation">.</span><span class="token function">redirect</span><span class="token punctuation">(</span>Carolina<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token string">'carolina_auth.unauthorizedRedirect'</span><span class="token punctuation">,</span>
+        <span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      response<span class="token punctuation">.</span><span class="token function">flash</span><span class="token punctuation">(</span><span class="token string">&quot;You must be logged in as an admin account to view that page.&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">'Login Required.'</span><span class="token punctuation">,</span> <span class="token string">'warning'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      
+      request<span class="token punctuation">.</span>response <span class="token operator">=</span> response<span class="token punctuation">;</span>
+      request<span class="token punctuation">.</span>shouldContinue <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> request<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>request<span class="token punctuation">.</span>user<span class="token punctuation">.</span>username<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token string">'a'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+      <span class="token keyword">let</span> response <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HttpResponse</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      response<span class="token punctuation">.</span><span class="token function">redirect</span><span class="token punctuation">(</span>Carolina<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token string">'carolina_auth.unauthorizedRedirect'</span><span class="token punctuation">,</span>
+        <span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      response<span class="token punctuation">.</span><span class="token function">flash</span><span class="token punctuation">(</span><span class="token string">&quot;You do not have access to this page.&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">'Login Required.'</span><span class="token punctuation">,</span> <span class="token string">'warning'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      
+      request<span class="token punctuation">.</span>response <span class="token operator">=</span> response<span class="token punctuation">;</span>
+      request<span class="token punctuation">.</span>shouldContinue <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> request<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> request<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>All requests with non-authenticated users or with users without usernames
+beginning with the lowercase letter &quot;a&quot; will be redirected to the value of
+the <code>unauthorizedRedirect</code> property of <code>config/carolina_auth.js</code> with a
+flash message provided.</p><h2 id="editing-the-user-model"><a href="#editing-the-user-model" aria-hidden="true" class="header-anchor">#</a> Editing the User Model</h2><p>Outside of the following restrictions, you can alter the User model
+(defined in <code>site/db/models/user.js</code>) to suit your needs:</p><ul><li>Leave the existing fields (<code>username</code>, <code>password</code>, <code>salt</code>, <code>forgotPasswordToken</code>, and <code>isAdmin</code>) in place.</li><li>Do not make ANY field other than <code>username</code> a required field.</li><li>Do not override or alter existing methods of the User class.</li></ul><h2 id="relevant-events"><a href="#relevant-events" aria-hidden="true" class="header-anchor">#</a> Relevant Events</h2><p>There are several Event classes constructed and thrown by the Carolina/Auth
+plugin. You can listen for them using Listeners. The events that such
+Listeners will receive are documented below.</p><p>Note that log messages are already generated for all of these as well,
+so you should not need to use these events for logging purposes. Just configure
+a logger to listen for log messages with a source of &quot;Auth&quot;.</p><ul><li><code>Carolina/Auth/LoginEvent</code></li></ul><p>Thrown whenever a user <em>successfully</em> logs in. Attached to the event is the
+<code>user</code> property, the User object of the newly logged-in user.</p><p>Usage (in a Listener class):</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">async</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>user<span class="token punctuation">.</span>username<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li><code>Carolina/Auth/LoginFailureEvent</code></li></ul><p>Thrown whenever a user login attempt fails. Attached to the event is the
+<code>identifier</code> property, the username or e-mail address associated with the
+failed attempt.</p><ul><li><code>Carolina/Auth/RegistrationEvent</code></li></ul><p>Thrown whenever a new user is registered by the <code>register()</code> method of
+the Carolina/Auth Service (whether manually or in a built-in route).
+Attached to the event is the <code>user</code> property, the User object of the newly
+registered user.</p></div><div class="page-edit"><!----><!----></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/docs/basics/crypto.html" class="prev">
+          The Crypto Service
+        </a></span><span class="next"><a href="/docs/auth/email-verification.html">
+          E-Mail Verification
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/app.1d2d3735.js" defer></script><script src="/assets/js/12.15d64a99.js" defer></script>
+  </body>
+</html>

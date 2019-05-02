@@ -1,0 +1,6 @@
+
+Hello {{ user.username }},
+
+You can verify your e-mail address by clicking the following link:
+
+{{ baseUrl }}/{{ user._id }}/{{ user.emailVerificationToken }}
