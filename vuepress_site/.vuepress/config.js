@@ -3,9 +3,19 @@ module.exports = {
   description: 'Documentation for the Carolina web framework.',
   themeConfig: {
     nav: [
-      { text: 'Documentation', link: '/' }
+      { text: 'Documentation', link: '/' },
+      { text: 'Tutorial', link: '/tutorials/' }
     ],
     sidebar: {
+      '/tutorials/': [
+        '/tutorials/',
+        '/tutorials/setup',
+        '/tutorials/db',
+        '/tutorials/auth',
+        '/tutorials/controller',
+        '/tutorials/guarding',
+        '/tutorials/templates'
+      ],
       '/': [
         {
           title: 'Getting Started',

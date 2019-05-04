@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Database &amp; Models | Carolina Documentation</title>
+    <meta name="description" content="Documentation for the Carolina web framework.">
+    
+    
+    <link rel="preload" href="/assets/css/styles.7c31eed0.css" as="style"><link rel="preload" href="/assets/js/app.7c31eed0.js" as="script"><link rel="preload" href="/assets/js/46.daeb2ff8.js" as="script"><link rel="prefetch" href="/assets/js/1.fcb353f5.js"><link rel="prefetch" href="/assets/js/10.20490b3a.js"><link rel="prefetch" href="/assets/js/11.9b580678.js"><link rel="prefetch" href="/assets/js/12.5fefd523.js"><link rel="prefetch" href="/assets/js/13.39c744cf.js"><link rel="prefetch" href="/assets/js/14.ea7d8be9.js"><link rel="prefetch" href="/assets/js/15.c64fa988.js"><link rel="prefetch" href="/assets/js/16.713cd274.js"><link rel="prefetch" href="/assets/js/17.2322935d.js"><link rel="prefetch" href="/assets/js/18.f9b9c28c.js"><link rel="prefetch" href="/assets/js/19.3996dea9.js"><link rel="prefetch" href="/assets/js/2.7341054b.js"><link rel="prefetch" href="/assets/js/20.0ed017ce.js"><link rel="prefetch" href="/assets/js/21.03e06658.js"><link rel="prefetch" href="/assets/js/22.65de5fe7.js"><link rel="prefetch" href="/assets/js/23.902995b5.js"><link rel="prefetch" href="/assets/js/24.243cf937.js"><link rel="prefetch" href="/assets/js/25.ef510e66.js"><link rel="prefetch" href="/assets/js/26.3dde74af.js"><link rel="prefetch" href="/assets/js/27.23a28020.js"><link rel="prefetch" href="/assets/js/28.3fbe4abc.js"><link rel="prefetch" href="/assets/js/29.bd5ece8b.js"><link rel="prefetch" href="/assets/js/3.6fb1d80f.js"><link rel="prefetch" href="/assets/js/30.349f7c13.js"><link rel="prefetch" href="/assets/js/31.9c5f7ff2.js"><link rel="prefetch" href="/assets/js/32.aeab2406.js"><link rel="prefetch" href="/assets/js/33.52f19e08.js"><link rel="prefetch" href="/assets/js/34.0e39768e.js"><link rel="prefetch" href="/assets/js/35.d8c674c0.js"><link rel="prefetch" href="/assets/js/36.b91b4bc8.js"><link rel="prefetch" href="/assets/js/37.db29dd9c.js"><link rel="prefetch" href="/assets/js/38.cc63f999.js"><link rel="prefetch" href="/assets/js/39.0ea182c5.js"><link rel="prefetch" href="/assets/js/4.daa5d832.js"><link rel="prefetch" href="/assets/js/40.c432dc4d.js"><link rel="prefetch" href="/assets/js/41.f7a29698.js"><link rel="prefetch" href="/assets/js/42.3b4aaf48.js"><link rel="prefetch" href="/assets/js/43.efb4c989.js"><link rel="prefetch" href="/assets/js/44.7ed77dea.js"><link rel="prefetch" href="/assets/js/45.5cf5c88e.js"><link rel="prefetch" href="/assets/js/47.faeda339.js"><link rel="prefetch" href="/assets/js/48.d3d2319e.js"><link rel="prefetch" href="/assets/js/5.d8ad5073.js"><link rel="prefetch" href="/assets/js/6.7fc4b4fa.js"><link rel="prefetch" href="/assets/js/7.94937768.js"><link rel="prefetch" href="/assets/js/8.8348ab52.js"><link rel="prefetch" href="/assets/js/9.8afb266f.js">
+    <link rel="stylesheet" href="/assets/css/styles.7c31eed0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      Carolina Documentation
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Documentation</a></div><div class="nav-item"><a href="/tutorials/" class="nav-link router-link-active">Tutorial</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Documentation</a></div><div class="nav-item"><a href="/tutorials/" class="nav-link router-link-active">Tutorial</a></div><!----></nav><ul class="sidebar-links"><li><a href="/tutorials/" class="sidebar-link">Tutorial Introduction</a></li><li><a href="/tutorials/setup.html" class="sidebar-link">Setup</a></li><li><a href="/tutorials/db.html" class="active sidebar-link">Database &amp; Models</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tutorials/db.html#database-configuration" class="sidebar-link">Database Configuration</a></li><li class="sidebar-sub-header"><a href="/tutorials/db.html#models" class="sidebar-link">Models</a></li></ul></li></ul></div><div class="page"><div class="content"><h1 id="database-models"><a href="#database-models" aria-hidden="true" class="header-anchor">#</a> Database &amp; Models</h1><p>The Carolina framework provides a global object called <code>Carolina</code> that maintains
+a library of Services which perform various functions.
+It is recommended that you consult the documentation on the
+<a href="/docs/overview/service-library.html">Carolina Global Object</a>.</p><h2 id="database-configuration"><a href="#database-configuration" aria-hidden="true" class="header-anchor">#</a> Database Configuration</h2><p>Database access is controlled by the Carolina Service called &quot;DB&quot;. Before
+using it, let's take a look at the configuration for the service, found in
+the file <code>config/db.js</code>.</p><p>Starting out, it should look something like this:</p><div class="language-javascript extra-class"><pre class="language-javascript"><code>exports <span class="token operator">=</span> module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  
+  connections<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'default'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      driver<span class="token punctuation">:</span> <span class="token string">'JsonConnection'</span><span class="token punctuation">,</span>
+      path<span class="token punctuation">:</span> <span class="token string">&quot;./data/main/&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  
+  connectionMap<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>This is not at all a good configuration for a real application, but it will
+work for testing out very simple applications. What this configuration is doing
+is saying that the default (and only) database connection involves just a bunch
+of JSON files stored in <code>data/main/</code>. We can leave it alone for now, but the
+Carolina framework includes an alternate connection driver called
+&quot;MongoDbConnection&quot; that can use to connect to a MongoDB instance.</p><p>For more information on configuring database connections, see the first section
+of the documentation on the <a href="/docs/db/db-service.html">DB Service</a>.</p><h2 id="models"><a href="#models" aria-hidden="true" class="header-anchor">#</a> Models</h2><p>The DB Service maintains a library of model classes, which are
+class-based representations of data in the database. There are some defined
+as a part of the framework, and some defined by you. You can create
+your own models in the directory <code>site/db/models/</code> and ensure that they
+are exported by the file <code>site/db/models/index.js</code>.</p><h3 id="the-user-model"><a href="#the-user-model" aria-hidden="true" class="header-anchor">#</a> The User Model</h3><p>If you look, you will see the the &quot;User&quot; model is already defined in
+<code>site/db/models/user.js</code>. Models are broken into two parts, a Schema which
+defines its various fields, and a Model class which is instantiated from
+the database information and can contain instance methods. Generally, you
+should leave the existing parts of the two classes alone, but you can
+add more fields to the Schema and more methods to the Model class if
+desired.</p><p>The User Schema and Model class will work as-is for this tutorial application.</p><h3 id="the-item-model"><a href="#the-item-model" aria-hidden="true" class="header-anchor">#</a> The Item Model</h3><p>We need to create another Model for our application, the &quot;Item&quot; model. This will
+represent specific items in a user's inventory.</p><p>You can generate a new Model file by running the following command:</p><div class="language- extra-class"><pre class="language-text"><code>node . generate model Item
+</code></pre></div><p>This will create the file <code>site/db/models/item.js</code>. Take a look at it.</p><p>By default, its Schema contains a &quot;name&quot; field. Sometimes you may want to
+remove this when creating a new Model, but in this case we will have
+a name field. Let's define some more fields. Make the Schema class look
+like this:</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">ItemSchema</span> <span class="token keyword">extends</span> <span class="token class-name">BaseSchema</span> <span class="token punctuation">{</span>
+  
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+    <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">this</span><span class="token punctuation">.</span>table <span class="token operator">=</span> <span class="token string">&quot;item&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>fields<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">&quot;String&quot;</span><span class="token punctuation">,</span> name<span class="token punctuation">:</span> <span class="token string">&quot;Name&quot;</span><span class="token punctuation">,</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>fields<span class="token punctuation">.</span>user <span class="token operator">=</span> <span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">&quot;Ref&quot;</span><span class="token punctuation">,</span> model<span class="token punctuation">:</span> <span class="token string">&quot;User&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>fields<span class="token punctuation">.</span>description <span class="token operator">=</span> <span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">&quot;Text&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    
+    <span class="token comment">// list fields to be shown in admin panel here</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>adminFields <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;name&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Note that we added the &quot;name&quot; property to the <code>name</code> field, and that we also
+added the <code>name</code> field to <code>adminFields</code>. The purpose of these two changes
+is specifically for the default admin panel, which will be covered later.</p><p>This is all we need to do for the Item Schema, and we can leave the Item
+Model Class alone for now.</p><p>The next thing we need to do is export the Item Model from
+<code>site/db/models/index.js</code>. Make it look like this:</p><div class="language-javascript extra-class"><pre class="language-javascript"><code>exports <span class="token operator">=</span> module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  Item<span class="token punctuation">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./item'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  User<span class="token punctuation">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./user'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>This tells the DB Service to notice and register our new Model.</p><p>For more information on defining Schemas and Model classes, consule the
+documentation on <a href="/docs/db/schemas.html">Schemas and Fields</a>.</p></div><div class="page-edit"><!----><!----></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/tutorials/setup.html" class="prev">
+          Setup
+        </a></span><!----></p></div></div></div></div>
+    <script src="/assets/js/app.7c31eed0.js" defer></script><script src="/assets/js/46.daeb2ff8.js" defer></script>
+  </body>
+</html>
