@@ -15,7 +15,7 @@ class BaseController {
   
   _validate(schemaName, obj, throwError=false) {
     let Validation = Carolina.$('Validation');
-    Validation.validate(schemaName, obj, throwError);
+    return Validation.validate(schemaName, obj, throwError);
   }
   
   sendText(text, status=200) {

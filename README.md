@@ -24,6 +24,5 @@ The best way to start is to clone the
 ## Documentation
 
 The documentation for the project is
-[here](http://carolina-site.s3-website.us-east-2.amazonaws.com/).
-
-I will be working on a tutorial project later.
+[here](http://carolina-site.s3-website.us-east-2.amazonaws.com/) and it 
+contains a tutorial project.

@@ -98,6 +98,9 @@ Note that we added the "name" property to the `name` field, and that we also
 added the `name` field to `adminFields`. The purpose of these two changes 
 is specifically for the default admin panel, which will be covered later.
 
+Additionally, note that the fields `_id`, `createdAt`, and `updatedAt`, will 
+be automatically added to the schema fields by the super constructor.
+
 This is all we need to do for the Item Schema, and we can leave the Item 
 Model Class alone for now.
 

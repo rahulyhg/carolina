@@ -60,10 +60,10 @@ exports = module.exports = [
     methods: ['POST']
   },
   {
-    route: "/delete/:itemId",
+    route: "/items/delete/:itemId",
     controller: 'ItemController',
     method: 'deleteItem',
-    methods: ["DELETE"]
+    methods: ["POST"]
   }
 ]
 ```

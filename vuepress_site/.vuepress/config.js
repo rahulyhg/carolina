@@ -14,7 +14,11 @@ module.exports = {
         '/tutorials/auth',
         '/tutorials/controller',
         '/tutorials/guarding',
-        '/tutorials/templates'
+        '/tutorials/templates',
+        '/tutorials/validation',
+        '/tutorials/creating-item',
+        '/tutorials/display',
+        '/tutorials/delete'
       ],
       '/': [
         {
