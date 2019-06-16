@@ -5,6 +5,8 @@ const path = require('path');
 
 const moment = require('moment');
 
+const cRequire = require('carolina/_lib/c-require');
+
 const LOG_LEVELS = {
   error: 0,
   warn: 1, 
@@ -46,7 +48,7 @@ class BaseService {
     for (let i = 0; i < installedPlugins.length; ++i) {
       try {
         let tempObjects = require(path.resolve(
-          require(installedPlugins[i]).pluginPath, "plugin",
+          cRequire(installedPlugins[i]).pluginPath, "plugin",
           localPath));
         pluginObjects = Object.assign(pluginObjects, tempObjects);
       }
